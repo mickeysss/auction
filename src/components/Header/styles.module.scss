@@ -80,6 +80,11 @@
       cursor: pointer;
       font-size: 16px;
       font-family: "Palatino", sans-serif;
+
+      > a{
+        list-style: none;
+        text-decoration: none;
+      }
     }
   }
 }
