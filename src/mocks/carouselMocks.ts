@@ -1,5 +1,7 @@
 import iphoneImage from '../assets/imgs/adsImages/iphone-ads.jpg'
 import thermosImage from '../assets/imgs/adsImages/thermos-xiaomi.jpg'
+import fashionImage from '../assets/imgs/adsImages/fashion-ads.jpg'
+import hikingImage from '../assets/imgs/adsImages/hiking-ads.jpg'
 
 export type carouselItemType = {
     id: number,
@@ -7,7 +9,8 @@ export type carouselItemType = {
     category: string,
     itemName: string,
     description: string,
-    image: string
+    image: string,
+    show: boolean
 }
 
 export const carouselItems: carouselItemType[] = [
@@ -20,29 +23,32 @@ export const carouselItems: carouselItemType[] = [
             'обычно используется в графических, печать и ' +
             'издательской индустрии для предварительного ' +
             'просмотра макета и визуальных макетах.',
-        image: iphoneImage
+        image: iphoneImage,
+        show: true
     },
     {
         id:2,
-        title: 'Супер флагман',
-        category: 'Electronics',
-        itemName: 'Iphone 13 Pro',
+        title: 'Собирайся в поход',
+        category: 'Другое',
+        itemName: 'Экипировка для хайкинка',
         description: 'Lorem Ipsum является текст-заполнитель ' +
             'обычно используется в графических, печать и ' +
             'издательской индустрии для предварительного ' +
             'просмотра макета и визуальных макетах.',
-        image: thermosImage
+        image: hikingImage,
+        show: false
     },
     {
         id:3,
-        title: 'Супер флагман',
-        category: 'Electronics',
-        itemName: 'Iphone 13 Pro',
+        title: 'Выбери свой стиль',
+        category: 'Одежда',
+        itemName: 'Модный тренд',
         description: 'Lorem Ipsum является текст-заполнитель ' +
             'обычно используется в графических, печать и ' +
             'издательской индустрии для предварительного ' +
             'просмотра макета и визуальных макетах.',
-        image: thermosImage
+        image: fashionImage,
+        show:false
     },
     {
         id:4,
@@ -53,6 +59,7 @@ export const carouselItems: carouselItemType[] = [
             'обычно используется в графических, печать и ' +
             'издательской индустрии для предварительного ' +
             'просмотра макета и визуальных макетах.',
-        image: iphoneImage
+        image: thermosImage,
+        show: false
     }
 ]
