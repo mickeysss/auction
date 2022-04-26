@@ -1,0 +1,27 @@
+.sidebar {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  width: 18vw;
+  height: 100vh;
+  padding: 20px;
+  background: #f8f4f5;
+}
+.menuList{
+  margin-top: 30px;
+
+  .menuItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    .menuItemIcon{
+      width: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: maroon;
+    }
+  }
+}
