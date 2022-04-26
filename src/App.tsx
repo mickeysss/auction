@@ -1,18 +1,24 @@
 import React from 'react';
 import {Route, Routes } from 'react-router-dom';
-import './App.css';
-import {Header} from './components/Header';
-import {Main} from './pages/Main';
+import styles from './App.module.scss';
+import {Header} from 'components/Header';
+import { Sidebar } from 'components/Sidebar/Sidebar';
+import {Main} from 'pages/Main';
+import { Categories } from 'pages/Categories';
 
 export const App = () => {
   return (
-    <div className="App">
-
+    <>
       <Header/>
-        <Routes>
-            <Route path="/" element={<Main/>}/>
-        </Routes>
-    </div>
+        <div className={styles.mainContainer}>
+            <Sidebar/>
+            <Routes>
+                <Route path="/" element={<Main/>}/>
+                <Route path="/categories" element={<Categories/>}/>
+
+            </Routes>
+        </div>
+    </>
   );
 }
 
