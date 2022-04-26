@@ -1,0 +1,42 @@
+.container{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+
+  .title{
+    margin-bottom: 70px;
+  }
+}
+
+.categoriesList{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  margin: 0 auto;
+  gap: 80px;
+}
+
+.categoryItem{
+  cursor: pointer;
+  max-width: 15vw;
+  display: flex;
+  flex-direction: column;
+
+  .categoryImage{
+    width: 15vw;
+    height: 13vw;
+    border-radius: 10%;
+    background-size: cover;
+    margin-bottom: 10px;
+
+    :hover{
+      opacity: .7;
+    }
+
+    .categoryTitle{
+      :hover{
+        color: grey;
+      }
+    }
+  }
+}
